@@ -24,6 +24,7 @@ App.view.define('VMain', {
 			layout: "fit",
 			items: [
 			{
+				border: false,
 				html: "hello world !",
 				padding: 10
 			}
