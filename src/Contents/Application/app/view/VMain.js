@@ -32,13 +32,42 @@ App.view.define('VMain', {
 			{
 				title: "Ile de France",
 				xtype: "grid",
-				columns: [],
+				columns: [
+				{
+					header: "CR annuel"
+				},
+				{
+					header: "CR ete"
+				},
+				{
+					header: "CR hiver"
+				},
+				{
+					header: "CR ev >1mm"
+				},
+				{
+					header: "CR ev >1mm été"
+				},
+				{
+					header: "CR ev >1mm hiver"
+				},
+				{
+					header: "CR ev >5mm"
+				},
+				{
+					header: "CR ev > 5mm été"
+				},	
+				{
+					header: "CR ev > 5mm hiver"
+				},	
+									 		/*	Ab annuel	AB ete	AB hiver	AB ev >1mm	AB ev >1mm été	AB ev >1mm hiver	AB ev >5mm	AB ev >5mm été	AB ev >5mm hiver*/
+				],
 				width: "100%",
 				store: App.store.create({fields:[],data:[]}),
 				flex: 1
 			},
 			{
-				title: "Ile de France",
+				title: "Montpellier",
 				xtype: "grid",
 				columns: [],
 				width: "100%",
