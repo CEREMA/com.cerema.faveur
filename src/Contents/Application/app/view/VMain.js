@@ -28,8 +28,21 @@ App.view.define('VMain', {
 				xtype: "textfield",
 				fieldLabel: "CME substrat (en %)",
 				labelWidth: 200,
-				padding: 10,
-				height: 100
+				padding: 10
+			},
+			{
+				border: false,
+				xtype: "textfield",
+				fieldLabel: "Epaisseur substrat (cm)",
+				labelWidth: 200,
+				padding: 10
+			},
+			{
+				border: false,
+				xtype: "combo",
+				fieldLabel: "Nature de la végétation (S ou G)",
+				labelWidth: 200,
+				padding: 10
 			},
 			{
 				title: "Ile de France",
