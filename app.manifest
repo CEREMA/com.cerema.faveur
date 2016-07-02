@@ -1,8 +1,8 @@
 {
     "namespace": "com.cerema.faveur",
     "git": "",
-    "title": "tpl.omneedia.webapp",
-    "description": "Package description goes here",
+    "title": "Faveur",
+    "description": "Estimation des performances hydriques des toitures terrasses végétalisées",
     "platform": "desktop",
     "targets": [
         "webapp"
@@ -10,14 +10,12 @@
     "uid": "e404d3a0-cc1d-418b-bd68-1ffef1b06551",
     "version": "1.00",
     "build": "0",
-    "copyright": "Copyright (c) 2016 By OMNEEDIA",
+    "copyright": "Copyright (c) 2016 By CEREMA",
     "license": "BSD",
     "author": {
-        "name": "XXX",
-        "mail": "xxx@xxx.com",
-        "twitter": "@xxx",
-        "web": "",
-        "github": ""
+        "name": "Stéphane Zucatti",
+        "mail": "stephane.zucatti@cerema.fr",
+        "twitter": "@mydearsz"
     },
     "team": {
         "debugger": [],
