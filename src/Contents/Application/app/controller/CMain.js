@@ -38,7 +38,6 @@ App.controller.define('CMain', {
 	{
 		var cme=App.get('mainform textfield#cme').getValue()*1;
 		var epaisseur=App.get('mainform textfield#epaisseur').getValue()*1;
-		alert(cme);
 		if (epaisseur<5) App.get('mainform textfield#cint').setValue(cme*epaisseur/10); else App.get('mainform textfield#cint').setValue(5*cme/10);
  	},
 	onLoad: function()
