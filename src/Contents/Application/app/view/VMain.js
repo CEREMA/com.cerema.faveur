@@ -37,7 +37,7 @@ App.view.define('VMain', {
 					header: "CR annuel"
 				},
 				{
-					header: "CR ete"
+					header: "CR été"
 				},
 				{
 					header: "CR hiver"
@@ -46,19 +46,19 @@ App.view.define('VMain', {
 					header: "CR ev >1mm"
 				},
 				{
-					header: "CR ev >1mm <br>été"
+					header: "CR ev >1mm<br>été"
 				},
 				{
-					header: "CR ev >1mm hiver"
+					header: "CR ev >1mm<br>hiver"
 				},
 				{
 					header: "CR ev >5mm"
 				},
 				{
-					header: "CR ev > 5mm été"
+					header: "CR ev > 5mm<br>été"
 				},	
 				{
-					header: "CR ev > 5mm hiver"
+					header: "CR ev > 5mm<br>hiver"
 				},	
 									 		/*	Ab annuel	AB ete	AB hiver	AB ev >1mm	AB ev >1mm été	AB ev >1mm hiver	AB ev >5mm	AB ev >5mm été	AB ev >5mm hiver*/
 				],
