@@ -21,12 +21,29 @@ App.view.define('VMain', {
 		{
 			region: "center",			
 			split:true,
-			layout: "fit",
+			layout: "vbox",
 			items: [
 			{
 				border: false,
 				html: "hello world !",
-				padding: 10
+				padding: 10,
+				height: 100
+			},
+			{
+				title: "Ile de France",
+				xtype: "grid",
+				columns: [],
+				width: "100%",
+				store: App.store.create({fields:[],data:[]}),
+				flex: 1
+			},
+			{
+				title: "Ile de France",
+				xtype: "grid",
+				columns: [],
+				width: "100%",
+				store: App.store.create({fields:[],data:[]}),
+				flex: 1
 			}
 			]
 		}
