@@ -28,6 +28,7 @@ App.view.define('VMain', {
 				xtype: "textfield",
 				itemId: "cme",
 				fieldLabel: "CME substrat (en %)",
+				enableKeyEvents: true,
 				labelWidth: 200,
 				padding: 10
 			},
@@ -36,6 +37,7 @@ App.view.define('VMain', {
 				xtype: "textfield",
 				fieldLabel: "Epaisseur substrat (cm)",
 				itemId: "epaisseur",
+				enableKeyEvents: true,
 				labelWidth: 200,
 				padding: 10
 			},
