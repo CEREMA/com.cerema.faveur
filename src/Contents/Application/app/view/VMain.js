@@ -26,7 +26,7 @@ App.view.define('VMain', {
 			{
 				border: false,
 				xtype: "textfield",
-				labelField: "CME substrat (en %)",
+				fieldLabel: "CME substrat (en %)",
 				padding: 10,
 				height: 100
 			},
