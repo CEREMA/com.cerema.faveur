@@ -161,7 +161,8 @@ App.view.define('VMain', {
 				columns: [
 				{
 					header: "",
-					dataIndex: "title"
+					dataIndex: "title",
+					bodyStyle: "background-color:lightgreen"
 				},
 				{
 					header: "CR annuel"
