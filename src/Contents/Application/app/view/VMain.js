@@ -163,7 +163,7 @@ App.view.define('VMain', {
 					header: "",
 					dataIndex: "title",
 					renderer: function(value, metadata, record, rowIndex, colIndex, store){
-						metadata.style = 'style="background-color: red;"';
+						metadata.style = 'background-color: red;';
 						return value;
 					}
 				},
