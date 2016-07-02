@@ -70,7 +70,8 @@ App.view.define('VMain', {
 				xtype: "grid",
 				columns: [
 				{
-					header: ""	
+					header: "",
+					dataIndex: "title"
 				},
 				{
 					header: "CR annuel"
@@ -128,7 +129,30 @@ App.view.define('VMain', {
 				}					
 				],
 				width: "100%",
-				store: App.store.create({fields:[],data:[]}),
+				store: App.store.create({
+					fields:[
+						"title"
+					],
+					data:[
+					{
+						title: "Minimum"
+					},
+					{
+						title: "Moyenne"
+					},
+					{
+						title: "Médiane"
+					},
+					{
+						title: "Maximum"
+					},
+					{
+						title: "q25"
+					},
+					{
+						title: "q75"
+					}
+					]}),
 				flex: 1
 			},
 			{
@@ -194,7 +218,30 @@ App.view.define('VMain', {
 				}	
 				],
 				width: "100%",
-				store: App.store.create({fields:[],data:[]}),
+				store: App.store.create({
+					fields:[
+						"title"
+					],
+					data:[
+					{
+						title: "Minimum"
+					},
+					{
+						title: "Moyenne"
+					},
+					{
+						title: "Médiane"
+					},
+					{
+						title: "Maximum"
+					},
+					{
+						title: "q25"
+					},
+					{
+						title: "q75"
+					}
+					]}),
 				flex: 1
 			}
 			]
