@@ -160,7 +160,8 @@ App.view.define('VMain', {
 				xtype: "grid",
 				columns: [
 				{
-					header: ""	
+					header: "",
+					dataIndex: "title"
 				},
 				{
 					header: "CR annuel"
