@@ -14,7 +14,7 @@ App.controller.define('CMain', {
 			"menu>menuitem": {
 				click: "Menu_onClick"
 			},
-			"button#clickme": {
+			"mainform button#clickme": {
 				click: "clickme_onclick"
 			}
 		});
@@ -30,7 +30,7 @@ App.controller.define('CMain', {
 	},
 	clickme_onclick: function()
 	{
-		Ext.Msg.alert('Omneedia','hello world!');
+		
 	},
 	onLoad: function()
 	{
