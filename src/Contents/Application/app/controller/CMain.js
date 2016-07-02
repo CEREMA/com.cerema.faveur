@@ -15,13 +15,13 @@ App.controller.define('CMain', {
 				click: "Menu_onClick"
 			},
 			"mainform textfield#cme": {
-				click: "clickme_onclick"
+				keypress: "updateDisplay"
 			},
 			"mainform textfield#epaisseur": {
-				click: "clickme_onclick"
+				click: "updateDisplay"
 			},
 			"mainform combo#nature": {
-				click: "clickme_onclick"
+				select: "updateDisplay"
 			}
 		});
 		
@@ -34,9 +34,11 @@ App.controller.define('CMain', {
 			Ext.Msg.alert('Status', 'Click event on '+p.itemId);
 		};			
 	},
-	clickme_onclick: function()
+	updateDisplay: function()
 	{
-		
+		var cme=App.get('mainform textfield#cme').getValue()*1;
+		var epaisseur=App.get('mainform textfield#epaisseur').getValue()*1;
+		if (cme<5) App.get('mainform textfield#cint')
 	},
 	onLoad: function()
 	{
