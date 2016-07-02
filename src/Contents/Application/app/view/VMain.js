@@ -52,6 +52,14 @@ App.view.define('VMain', {
 				})
 			},
 			{
+				border: false,
+				xtype: "textfield",
+				fieldLabel: "<b>Cint (mm)</b>",
+				labelWidth: 200,
+				readOnly: true,
+				padding: 10					
+			},
+			{
 				title: "Ile de France",
 				xtype: "grid",
 				columns: [
