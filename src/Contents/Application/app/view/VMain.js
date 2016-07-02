@@ -59,6 +59,7 @@ App.view.define('VMain', {
 			{
 				border: false,
 				xtype: "textfield",
+				itemId: "cint",
 				fieldLabel: "<b>Cint (mm)</b>",
 				labelWidth: 200,
 				readOnly: true,
