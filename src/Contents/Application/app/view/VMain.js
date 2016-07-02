@@ -42,7 +42,11 @@ App.view.define('VMain', {
 				xtype: "combo",
 				fieldLabel: "Nature de la végétation (S ou G)",
 				labelWidth: 200,
-				padding: 10
+				padding: 10,
+				store: App.store.create({
+					fields:["id"],
+					data:[{id:"S"},{id:"G"}]
+				})
 			},
 			{
 				title: "Ile de France",
