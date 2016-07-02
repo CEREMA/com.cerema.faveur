@@ -43,6 +43,8 @@ App.view.define('VMain', {
 				fieldLabel: "Nature de la végétation (S ou G)",
 				labelWidth: 200,
 				padding: 10,
+				displayField: "id",
+				valueField: "id",
 				store: App.store.create({
 					fields:["id"],
 					data:[{id:"S"},{id:"G"}]
