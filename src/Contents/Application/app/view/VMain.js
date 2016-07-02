@@ -45,6 +45,7 @@ App.view.define('VMain', {
 				padding: 10,
 				displayField: "id",
 				valueField: "id",
+				editable: false,
 				store: App.store.create({
 					fields:["id"],
 					data:[{id:"S"},{id:"G"}]
