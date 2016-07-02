@@ -26,6 +26,7 @@ App.view.define('VMain', {
 			{
 				border: false,
 				xtype: "textfield",
+				itemId: "cme",
 				fieldLabel: "CME substrat (en %)",
 				labelWidth: 200,
 				padding: 10
@@ -34,12 +35,14 @@ App.view.define('VMain', {
 				border: false,
 				xtype: "textfield",
 				fieldLabel: "Epaisseur substrat (cm)",
+				itemId: "epaisseur",
 				labelWidth: 200,
 				padding: 10
 			},
 			{
 				border: false,
 				xtype: "combo",
+				itemId: "nature",
 				fieldLabel: "Nature de la végétation (S ou G)",
 				labelWidth: 200,
 				padding: 10,
