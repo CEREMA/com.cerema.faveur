@@ -14,7 +14,13 @@ App.controller.define('CMain', {
 			"menu>menuitem": {
 				click: "Menu_onClick"
 			},
-			"mainform button#clickme": {
+			"mainform textfield#cme": {
+				click: "clickme_onclick"
+			},
+			"mainform textfield#epaisseur": {
+				click: "clickme_onclick"
+			},
+			"mainform combo#nature": {
 				click: "clickme_onclick"
 			}
 		});
