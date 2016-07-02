@@ -46,7 +46,7 @@ App.view.define('VMain', {
 					header: "CR ev >1mm"
 				},
 				{
-					header: "CR ev >1mm été"
+					header: "CR ev >1mm <br>été"
 				},
 				{
 					header: "CR ev >1mm hiver"
