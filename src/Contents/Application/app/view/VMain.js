@@ -64,6 +64,9 @@ App.view.define('VMain', {
 				xtype: "grid",
 				columns: [
 				{
+					header: ""	
+				},
+				{
 					header: "CR annuel"
 				},
 				{
@@ -126,6 +129,9 @@ App.view.define('VMain', {
 				title: "Montpellier",
 				xtype: "grid",
 				columns: [
+				{
+					header: ""	
+				},
 				{
 					header: "CR annuel"
 				},
