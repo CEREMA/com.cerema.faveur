@@ -71,7 +71,11 @@ App.view.define('VMain', {
 				columns: [
 				{
 					header: "",
-					dataIndex: "title"
+					dataIndex: "title",
+					renderer: function(value, metadata, record, rowIndex, colIndex, store){
+						metadata.style = 'background-color: lightgreen;';
+						return value;
+					}
 				},
 				{
 					header: "CR annuel"
