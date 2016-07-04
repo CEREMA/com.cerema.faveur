@@ -24,6 +24,7 @@ Calcul = {
 		function decodeSI(o) {
 			var str=o.cmd;
 			var DATA=o.data;
+			DATA['V160413!B$9']=o.cint;
 			var OPERANDS=[
 				"+","-","*","/"
 			];
@@ -38,66 +39,85 @@ Calcul = {
 			var cmd2=cmd[2];
 			cmd2=cmd2.substr(0,cmd2.lastIndexOf(')'));
 			var b=0;
-			for (var i=0;i<cmd1.length;i++) {
-				if (OPERANDS.indexOf(cmd1[i])>-1) {
-					var item=cmd1.substr(b,i-b).replace(/\'/g,'');
-					accumulator.push({id:item,operator:cmd1[i]});	
-					b=i+1;
-				}
-			};
-			accumulator.push({id:cmd1.substr(b,cmd1.length),operator:""});	
-			cmd1=accumulator;
-			accumulator=[];
-			var b=0;
-			for (var i=0;i<cmd2.length;i++) {
-				if (OPERANDS.indexOf(cmd2[i])>-1) {
-					var item=cmd2.substr(b,i-b).replace(/\'/g,'');
-					accumulator.push({id:item,operator:cmd2[i]});	
-					b=i+1;
-				}
-			};
-			accumulator.push({id:cmd2.substr(b,cmd2.length),operator:""});	
-			cmd2=accumulator;
-
-			var total="";
 			
-			DATA['V160413!B$9']=o.cint;
 			if (retour=="cmd1") {
+				cmd1=cmd1.split('+');
+				var STACKS=[];
 				for (var i=0;i<cmd1.length;i++) {
-					var id=cmd1[i].id.split('^')[0];
-					if (cmd1[i].id.indexOf('^')>-1) {
-						var pow=cmd1[i].id.split('^')[1];
-					} else var pow=-1;
-					if (DATA[id]) {
-						var value=DATA[id];
-						if (pow!=-1) {
-							value=Math.pow(value,pow);
+					var item=cmd1[i].split('*');
+					var value=0;
+					if (item.length==1) {
+						var id=item[0].split('^')[0];
+						if (item[0].indexOf('^')>-1) {
+							var pow=item[0].split('^')[1];
+						} else var pow=-1;
+						if (DATA[id]) {
+							var value=DATA[id];
+							if (pow!=-1) value=Math.pow(value,pow);
 						};
-						var operator=cmd1[i].operator;
-						total+=value+operator;
-						//console.log(value);
-					} else total+='xxx';
-				};
-			} else {
-				var total="";
-				for (var i=0;i<cmd2.length;i++) {
-					var id=cmd2[i].id.split('^')[0];
-					if (cmd2[i].id.indexOf('^')>-1) {
-						var pow=cmd2[i].id.split('^')[1];
-					} else var pow=-1;
-					if (DATA[id]) {
-						var value=DATA[id];
-						if (pow!=-1) {
-							value=Math.pow(value,pow);
+					} else {
+						var id1=item[0].split('^')[0];
+						if (item[0].indexOf('^')>-1) {
+							var pow=item[0].split('^')[1];
+						} else var pow=-1;			
+						if (DATA[id1]) {
+							var value1=DATA[id1];
+							if (pow!=-1) value1=Math.pow(value1,pow);
 						};
-						var operator=cmd2[i].operator;
-						total+=value+operator;
-					} else total+='xxx';
+						
+						var id2=item[1].split('^')[0];
+						if (item[1].indexOf('^')>-1) {
+							var pow=item[1].split('^')[1];
+						} else var pow=-1;			
+						if (DATA[id2]) {
+							var value2=DATA[id2];
+							if (pow!=-1) value2=Math.pow(value2,pow);
+						};
+						var value=value1*value2;
+					};
+					STACKS.push(value);
 				};
+				return eval(STACKS.join('+')).toFixed(1);
 			};
-			total=total.replace(/,/g,'.');
-			
-			return eval(total).toFixed(1);
+			if (retour=="cmd2") {
+				cmd2=cmd1.split('+');
+				var STACKS=[];
+				for (var i=0;i<cmd2.length;i++) {
+					var item=cmd2[i].split('*');
+					var value=0;
+					if (item.length==1) {
+						var id=item[0].split('^')[0];
+						if (item[0].indexOf('^')>-1) {
+							var pow=item[0].split('^')[1];
+						} else var pow=-1;
+						if (DATA[id]) {
+							var value=DATA[id];
+							if (pow!=-1) value=Math.pow(value,pow);
+						};
+					} else {
+						var id1=item[0].split('^')[0];
+						if (item[0].indexOf('^')>-1) {
+							var pow=item[0].split('^')[1];
+						} else var pow=-1;			
+						if (DATA[id1]) {
+							var value1=DATA[id1];
+							if (pow!=-1) value1=Math.pow(value1,pow);
+						};
+						
+						var id2=item[1].split('^')[0];
+						if (item[1].indexOf('^')>-1) {
+							var pow=item[1].split('^')[1];
+						} else var pow=-1;			
+						if (DATA[id2]) {
+							var value2=DATA[id2];
+							if (pow!=-1) value2=Math.pow(value2,pow);
+						};
+						var value=value1*value2;
+					};
+					STACKS.push(value);
+				};
+				return eval(STACKS.join('+')).toFixed(1);
+			};	
 		};
 		var fs=require('fs');
 		var data=[];
