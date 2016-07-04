@@ -153,7 +153,8 @@ App.view.define('VMain', {
 				width: "100%",
 				store: App.store.create({
 					fields:[
-						"title"
+						"title",
+                        "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R"
 					],
 					data:[
 					{
