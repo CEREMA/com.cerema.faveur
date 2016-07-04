@@ -191,59 +191,77 @@ App.view.define('VMain', {
 					}
 				},
 				{
-					header: "CR annuel"
+					header: "CR annuel",
+                    dataIndex: "A"
 				},
 				{
-					header: "CR été"
+					header: "CR été",
+                    dataIndex: "B"
 				},
 				{
-					header: "CR hiver"
+					header: "CR hiver",
+                    dataIndex: "C"
 				},
 				{
-					header: "CR ev >1mm"
+					header: "CR ev >1mm",
+                    dataIndex: "D"
 				},
 				{
-					header: "CR ev >1mm<br>été"
+					header: "CR ev >1mm<br>été",
+                    dataIndex: "E"
 				},
 				{
-					header: "CR ev >1mm<br>hiver"
+					header: "CR ev >1mm<br>hiver",
+                    dataIndex: "F"
 				},
 				{
-					header: "CR ev >5mm"
+					header: "CR ev >5mm",
+                    dataIndex: "G"
 				},
 				{
-					header: "CR ev > 5mm<br>été"
+					header: "CR ev > 5mm<br>été",
+                    dataIndex: "H"
 				},	
 				{
-					header: "CR ev > 5mm<br>hiver"
+					header: "CR ev > 5mm<br>hiver",
+                    dataIndex: "I"
 				},	
 				{
-					header: "Ab annuel"
+					header: "Ab annuel",
+                    dataIndex: "J"
 				},	
 				{
-					header: "AB<br>été"
+					header: "AB<br>été",
+                    dataIndex: "K"
 				},	
 				{
-					header: "AB<br>hiver"
+					header: "AB<br>hiver",
+                    dataIndex: "L"
 				},	
 				{
-					header: "AB ev >1mm"
+					header: "AB ev >1mm",
+                    dataIndex: "M"
 				},	
 				{
-					header: "AB ev >1mm<br>été"
+					header: "AB ev >1mm<br>été",
+                    dataIndex: "N"
 				},	
 				{
-					header: "AB ev >1mm<br>hiver"
+					header: "AB ev >1mm<br>hiver",
+                    dataIndex: "O"
 				},
 				{
-					header: "AB ev >5mm"
+					header: "AB ev >5mm",
+                    dataIndex: "P"
 				},	
 				{
-					header: "AB ev >5mm<br>été"
+					header: "AB ev >5mm<br>été",
+                    dataIndex: "Q"
 				},	
 				{
-					header: "AB ev >5mm<br>hiver"
-				}	
+					header: "AB ev >5mm<br>hiver",
+                    dataIndex: "R"
+				}					
 				],
 				width: "100%",
 				store: App.store.create({
