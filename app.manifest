@@ -53,8 +53,7 @@
     "modules": [],
     "plugins": [],
     "api": [
-        "Calcul",
-        "MyService"
+        "Calcul"
     ],
     "db": [],
     "packages": [],
