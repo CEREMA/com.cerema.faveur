@@ -140,7 +140,8 @@ Calcul = {
 					cmd: grid[i][j],
 					data: DATA,
 					cint: o.cint,
-					nature: o.nature
+					nature: o.nature,
+					coef: o.coef
 				})
                 
 			};
