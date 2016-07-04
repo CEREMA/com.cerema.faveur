@@ -115,8 +115,8 @@ Calcul = {
 				obj[HEADERS[j]]=decodeSI({
 					cmd: grid[i][j],
 					data: DATA,
-					cint: "50",
-					nature: "S"
+					cint: o.cint,
+					nature: o.nature
 				})
 			};
 			data.push(obj);
