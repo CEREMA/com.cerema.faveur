@@ -97,7 +97,7 @@ Calcul = {
 			};
 			total=total.replace(/,/g,'.');
 			
-			return eval(total).toFixed(2);
+			return eval(total).toFixed(1);
 		};
 		var fs=require('fs');
 		var data=[];
