@@ -134,9 +134,7 @@ Calcul = {
 			if (i==3) obj.title="Maximum";
 			if (i==4) obj.title="q25";
 			if (i==5) obj.title="q75";
-            console.log(obj);
 			for (var j=0;j<grid[i].length;j++) {
-                console.log(j);
 				obj[HEADERS[j]]=decodeSI({
 					cmd: grid[i][j],
 					data: DATA,
