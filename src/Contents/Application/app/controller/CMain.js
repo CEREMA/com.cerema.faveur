@@ -53,6 +53,7 @@ App.controller.define('CMain', {
             nature: App.get('mainform combo#nature').getValue()
         };
         App.Calcul.getAll(obj,function(result){
+            console.log(result);
             App.get('mainform grid#Montpellier').getStore().loadData(result); 
         });
  	},
