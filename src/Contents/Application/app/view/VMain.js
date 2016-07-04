@@ -68,6 +68,7 @@ App.view.define('VMain', {
 			{
 				title: "Ile de France",
 				xtype: "grid",
+                itemId: "idf",
 				columns: [
 				{
 					header: "",
