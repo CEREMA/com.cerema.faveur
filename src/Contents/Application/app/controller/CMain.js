@@ -47,14 +47,14 @@ App.controller.define('CMain', {
         App.Calcul.getAll(obj,function(result){
             App.get('mainform grid#idf').getStore().loadData(result); 
         });
-        var obj={
+        /*var obj={
             coef: "ls_coef_Montpellier",
             cint: App.get('mainform textfield#cint').getValue(),
             nature: App.get('mainform combo#nature').getValue()
         };
         App.Calcul.getAll(obj,function(result){
             App.get('mainform grid#Montpellier').getStore().loadData(result); 
-        });
+        });*/
  	},
 	onLoad: function()
 	{
