@@ -125,7 +125,7 @@ Calcul = {
         if (o.coef=="ls_coef_IdF") var grid=JSON.parse(fs.readFileSync(__dirname+require('path').sep+'data'+require('path').sep+'grid.conf','utf-8'));
         else var grid=JSON.parse(fs.readFileSync(__dirname+require('path').sep+'data'+require('path').sep+'grid2.conf','utf-8'));
         console.log(o.coef);
-        console.log(gris);
+        console.log(grid);
 		for (var i=0;i<grid.length;i++) {
 			var obj={};
 			if (i==0) obj.title="Minimum";
