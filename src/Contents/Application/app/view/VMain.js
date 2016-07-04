@@ -181,6 +181,7 @@ App.view.define('VMain', {
 			},
 			{
 				title: "Montpellier",
+                itemId: "Montpellier",
 				xtype: "grid",
 				columns: [
 				{
