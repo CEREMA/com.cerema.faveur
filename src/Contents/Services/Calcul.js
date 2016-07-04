@@ -102,7 +102,7 @@ Calcul = {
 		var fs=require('fs');
 		var data=[];
 		var DATA=getData(o.coef);
-		var grid=JSON.parse(fs.readFileSync(__dirname+require('path').sep+'grid.conf','utf-8'));
+		var grid=JSON.parse(fs.readFileSync(__dirname+require('path').sep+'data'+require('path').sep+'grid.conf','utf-8'));
 		for (var i=0;i<grid.length;i++) {
 			var obj={};
 			if (i==0) obj.title="Minimum";
