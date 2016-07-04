@@ -110,10 +110,16 @@ Calcul = {
 			if (i==2) obj.title="Médiane";
 			if (i==3) obj.title="Maximum";
 			if (i==4) obj.title="q25";
-			if (i==4) obj.title="q75";
+			if (i==5) obj.title="q75";
 			for (var j=0;j<grid[i].length;j++) {
-				
+				obj[HEADERS[j]]=decodeSI({
+					cmd: grid[i][j],
+					data: DATA,
+					cint: "50",
+					nature: "S"
+				})
 			};
+			data.push(obj);
 		};
 	}
 }
