@@ -121,6 +121,7 @@ Calcul = {
 			};
 			data.push(obj);
 		};
+        cb(data);
 	}
 }
 
