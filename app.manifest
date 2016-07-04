@@ -1,6 +1,6 @@
 {
     "namespace": "com.cerema.faveur",
-    "git": "",
+    "git": "https://github.com/CEREMA/com.cerema.faveur.git",
     "title": "Faveur",
     "description": "Estimation des performances hydriques des toitures terrasses végétalisées",
     "platform": "desktop",
