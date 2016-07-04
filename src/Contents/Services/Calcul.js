@@ -22,7 +22,7 @@ Calcul = {
 			return DATA;
 		};
 		function decodeSI(o) {
-			var str=o.cmd;
+			var str=o.cmd.replace(/#PAGE/g,o.coef);
 			var DATA=o.data;
 			DATA['V160413!B$9']=o.cint;
 			var OPERANDS=[
