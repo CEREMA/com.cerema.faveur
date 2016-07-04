@@ -7,7 +7,7 @@ Calcul = {
 		function getData(filename) {
 			var fs=require('fs');
 
-			var data=fs.readFileSync(__dirname+require('path').sep+filename+'.data','utf-8').split('\n');
+			var data=fs.readFileSync(__dirname+require('path').sep+'data'+require('path').sep+filename+'.data','utf-8').split('\n');
 
 			var DATA={};
 			var CELLS=[
