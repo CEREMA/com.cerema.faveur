@@ -123,7 +123,7 @@ Calcul = {
 		var data=[];
 		var DATA=getData(o.coef);
         if (o.coef=="ls_coef_IdF") var grid=JSON.parse(fs.readFileSync(__dirname+require('path').sep+'data'+require('path').sep+'grid.conf','utf-8'));
-        if (o.coef=="ls_coef_Montpellier") var grid=JSON.parse(fs.readFileSync(__dirname+require('path').sep+'data'+require('path').sep+'grid2.conf','utf-8'));
+        else var grid=JSON.parse(fs.readFileSync(__dirname+require('path').sep+'data'+require('path').sep+'grid2.conf','utf-8'));
         console.log(o.coef);
         console.log(gris);
 		for (var i=0;i<grid.length;i++) {
