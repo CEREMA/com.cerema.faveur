@@ -56,7 +56,6 @@ App.controller.define('CMain', {
         };
         App.Calcul.getAll(obj,function(result){
             console.log(result);    
-            alert('x');
             App.get('mainform grid#Montpellier').getStore().loadData(result); 
         });
  	},
