@@ -39,7 +39,7 @@ App.controller.define('CMain', {
 		var cme=App.get('mainform textfield#cme').getValue()*1;
 		var epaisseur=App.get('mainform textfield#epaisseur').getValue()*1;
 		if (epaisseur<5) App.get('mainform textfield#cint').setValue(cme*epaisseur/10); else App.get('mainform textfield#cint').setValue(5*cme/10);
-        /*
+        
         var obj={
             coef: "ls_coef_IdF",
             cint: App.get('mainform textfield#cint').getValue(),
@@ -48,7 +48,7 @@ App.controller.define('CMain', {
         App.Calcul.getAll(obj,function(result){
             App.get('mainform grid#idf').getStore().loadData(result); 
         });
-        */
+        
         var obj={
             coef: "ls_coef_Montpellier",
             cint: App.get('mainform textfield#cint').getValue(),
