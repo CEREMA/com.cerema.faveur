@@ -80,75 +80,93 @@ App.view.define('VMain', {
 				},
 				{
 					header: "CR annuel",
-                    dataIndex: "A"
+                    dataIndex: "A",
+                    align: "right"
 				},
 				{
 					header: "CR été",
-                    dataIndex: "B"
+                    dataIndex: "B",
+                    align: "right"
 				},
 				{
 					header: "CR hiver",
-                    dataIndex: "C"
+                    dataIndex: "C",
+                    align: "right"
 				},
 				{
 					header: "CR ev >1mm",
-                    dataIndex: "D"
+                    dataIndex: "D",
+                    align: "right"
 				},
 				{
 					header: "CR ev >1mm<br>été",
-                    dataIndex: "E"
+                    dataIndex: "E",
+                    align: "right"
 				},
 				{
 					header: "CR ev >1mm<br>hiver",
-                    dataIndex: "F"
+                    dataIndex: "F",
+                    align: "right"
 				},
 				{
 					header: "CR ev >5mm",
-                    dataIndex: "G"
+                    dataIndex: "G",
+                    align: "right"
 				},
 				{
 					header: "CR ev > 5mm<br>été",
-                    dataIndex: "H"
+                    dataIndex: "H",
+                    align: "right"
 				},	
 				{
 					header: "CR ev > 5mm<br>hiver",
-                    dataIndex: "I"
+                    dataIndex: "I",
+                    align: "right"
 				},	
 				{
 					header: "Ab annuel",
-                    dataIndex: "J"
+                    dataIndex: "J",
+                    align: "right"
 				},	
 				{
 					header: "AB<br>été",
-                    dataIndex: "K"
+                    dataIndex: "K",
+                    align: "right"
 				},	
 				{
 					header: "AB<br>hiver",
-                    dataIndex: "L"
+                    dataIndex: "L",
+                    align: "right"
 				},	
 				{
 					header: "AB ev >1mm",
-                    dataIndex: "M"
+                    dataIndex: "M",
+                    align: "right"
 				},	
 				{
 					header: "AB ev >1mm<br>été",
-                    dataIndex: "N"
+                    dataIndex: "N",
+                    align: "right"
 				},	
 				{
 					header: "AB ev >1mm<br>hiver",
-                    dataIndex: "O"
+                    dataIndex: "O",
+                    align: "right"
 				},
 				{
 					header: "AB ev >5mm",
-                    dataIndex: "P"
+                    dataIndex: "P",
+                    align: "right"
 				},	
 				{
 					header: "AB ev >5mm<br>été",
-                    dataIndex: "Q"
+                    dataIndex: "Q",
+                    align: "right"
 				},	
 				{
 					header: "AB ev >5mm<br>hiver",
-                    dataIndex: "R"
+                    dataIndex: "R",
+                    align: "right"
 				}					
 				],
 				width: "100%",
@@ -199,71 +217,88 @@ App.view.define('VMain', {
 				},
 				{
 					header: "CR été",
-                    dataIndex: "B"
+                    dataIndex: "B",
+                    align: "right"
 				},
 				{
 					header: "CR hiver",
-                    dataIndex: "C"
+                    dataIndex: "C",
+                    align: "right"
 				},
 				{
 					header: "CR ev >1mm",
-                    dataIndex: "D"
+                    dataIndex: "D",
+                    align: "right"
 				},
 				{
 					header: "CR ev >1mm<br>été",
-                    dataIndex: "E"
+                    dataIndex: "E",
+                    align: "right"
 				},
 				{
 					header: "CR ev >1mm<br>hiver",
-                    dataIndex: "F"
+                    dataIndex: "F",
+                    align: "right"
 				},
 				{
 					header: "CR ev >5mm",
-                    dataIndex: "G"
+                    dataIndex: "G",
+                    align: "right"
 				},
 				{
 					header: "CR ev > 5mm<br>été",
-                    dataIndex: "H"
+                    dataIndex: "H",
+                    align: "right"
 				},	
 				{
 					header: "CR ev > 5mm<br>hiver",
-                    dataIndex: "I"
+                    dataIndex: "I",
+                    align: "right"
 				},	
 				{
 					header: "Ab annuel",
-                    dataIndex: "J"
+                    dataIndex: "J",
+                    align: "right"
 				},	
 				{
 					header: "AB<br>été",
-                    dataIndex: "K"
+                    dataIndex: "K",
+                    align: "right"
 				},	
 				{
 					header: "AB<br>hiver",
-                    dataIndex: "L"
+                    dataIndex: "L",
+                    align: "right"
 				},	
 				{
 					header: "AB ev >1mm",
-                    dataIndex: "M"
+                    dataIndex: "M",
+                    align: "right"
 				},	
 				{
 					header: "AB ev >1mm<br>été",
-                    dataIndex: "N"
+                    dataIndex: "N",
+                    align: "right"
 				},	
 				{
 					header: "AB ev >1mm<br>hiver",
-                    dataIndex: "O"
+                    dataIndex: "O",
+                    align: "right"
 				},
 				{
 					header: "AB ev >5mm",
-                    dataIndex: "P"
+                    dataIndex: "P",
+                    align: "right"
 				},	
 				{
 					header: "AB ev >5mm<br>été",
-                    dataIndex: "Q"
+                    dataIndex: "Q",
+                    align: "right"
 				},	
 				{
 					header: "AB ev >5mm<br>hiver",
-                    dataIndex: "R"
+                    dataIndex: "R",
+                    align: "right"
 				}					
 				],
 				width: "100%",
