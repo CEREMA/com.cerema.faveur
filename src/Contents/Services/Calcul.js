@@ -134,14 +134,17 @@ Calcul = {
 			if (i==4) obj.title="q25";
 			if (i==5) obj.title="q75";
 			for (var j=0;j<grid[i].length;j++) {
-				obj[HEADERS[j]]=decodeSI({
-					cmd: grid[i][j],
-					data: DATA,
-					cint: o.cint,
-					nature: o.nature,
-					coef: o.coef
-				})
-                
+                if (grid[i][j]!="") {}
+                    obj[HEADERS[j]]=decodeSI({
+                        cmd: grid[i][j],
+                        data: DATA,
+                        cint: o.cint,
+                        nature: o.nature,
+                        coef: o.coef
+                    })
+                } else {
+                    obj[HEADERS[j]]="";
+                };                
 			};
 			data.push(obj);
 		};
