@@ -35,6 +35,8 @@ Calcul = {
 			var cmd=str.split(';');
 			var cond=cmd[0];
 			if (o.nature=="S") var retour="cmd1"; else var retour="cmd2";
+            console.log(retour);
+            console.log(o.nature);
 			var cmd1=cmd[1];
 			var cmd2=cmd[2];
 			cmd2=cmd2.substr(0,cmd2.lastIndexOf(')'));
@@ -79,7 +81,7 @@ Calcul = {
 				};
 				return eval(STACKS.join('+')).toFixed(1);
 			};
-            console.log(retour);
+            
 			if (retour=="cmd2") {
 				cmd2=cmd1.split('+');
 				var STACKS=[];
