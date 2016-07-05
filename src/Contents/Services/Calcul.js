@@ -83,7 +83,7 @@ Calcul = {
 			};
             
 			if (retour=="cmd2") {
-				cmd2=cmd1.split('+');
+				cmd2=cmd2.split('+');
 				var STACKS=[];
 				for (var i=0;i<cmd2.length;i++) {
 					var item=cmd2[i].split('*');
