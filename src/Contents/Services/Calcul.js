@@ -79,7 +79,7 @@ Calcul = {
 				};
 				return eval(STACKS.join('+')).toFixed(1);
 			};
-            
+            console.log(retour);
 			if (retour=="cmd2") {
 				cmd2=cmd1.split('+');
 				var STACKS=[];
