@@ -194,7 +194,8 @@ App.view.define('VMain', {
 				},
 				{
 					header: "CR annuel",
-                    dataIndex: "A"
+                    dataIndex: "A",
+                    align: "right"
 				},
 				{
 					header: "CR été",
