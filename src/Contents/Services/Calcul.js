@@ -34,7 +34,7 @@ Calcul = {
 			str=str.substr(z,zz);
 			var cmd=str.split(';');
 			var cond=cmd[0];
-			if (cond.split('=')[1]=='"'+o.nature+'"') var retour="cmd1"; else var retour="cmd2";
+			if (o.nature=="S") var retour="cmd1"; else var retour="cmd2";
 			var cmd1=cmd[1];
 			var cmd2=cmd[2];
 			cmd2=cmd2.substr(0,cmd2.lastIndexOf(')'));
